@@ -20,7 +20,7 @@ int main()
 
 
     // Pedimos al usuario que ingrese el texto
-    std::cout << _("Ingresa el texto: ");
+    std::cout << _("Ingresa el texto de ejemplo: ");
     std::string text;
     std::getline(std::cin, text);
 
