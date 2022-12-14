@@ -21,6 +21,6 @@ Indica el última commit en la rama
 
 Hace simplemente 'push'
 
-##git lb
+## git lb
 
 Lista todas las ramas remotas
