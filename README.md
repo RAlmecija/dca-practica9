@@ -44,5 +44,4 @@ Biseccionando: faltan 3 revisiones por probar después de esto (aproximadamente 
 
 ```
 
-He ido pasando los commits con el comando `git bisect good` para ver cual era el que fallaba
-
+He ido pasando los commits con el comando `git bisect good` para ver cual era el que fallaba.
