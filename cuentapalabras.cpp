@@ -41,7 +41,7 @@ int main()
     }
 
     // Mostramos al usuario el resultado
-    std::cout << _("El texto tiene exactamente ") << word_count - 5 << _(" palabras.") << std::endl;
+    std::cout << _("El texto tiene exactamente ") << word_count << _(" palabras.") << std::endl;
 
     return 0;
 }
