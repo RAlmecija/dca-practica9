@@ -2,7 +2,7 @@
 Repositorio usado para la practica 9 de la asignatura de DCA
 
 
-#Alias creados 
+# Alias creados 
 
 Con el comando `git config --global --get-regexp alias` listamos los creados.
 
