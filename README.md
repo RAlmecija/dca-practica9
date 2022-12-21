@@ -36,7 +36,7 @@ En el siguiente paso, he puesto `git bisect good 55eab241873eae373304f3d51fcbc5d
 he usado ese SHA por que se que es uno donde funcionaba el programa según lo esperado.
 
 
-En la terminal ha puesto:
+En la terminal sale por pantalla:
 
 ```
 Biseccionando: faltan 3 revisiones por probar después de esto (aproximadamente 2 pasos)
@@ -52,11 +52,19 @@ He ido pasando los commits con el comando `git bisect good` para ver cual era el
 
 ## pre-commit
 
-(Se encuentra explicado dentro del archivo ./git/hooks/pre-commit)
+Realizo un pre-commit que busco en todos los archivos alguna de mis palabras prohibidas.
+El archivo se puede ver que se ejecuta al hacer commit al haber puesto un echo
+Se puede ver mas en detalle en './git/hooks/pre-commit
 
+### Ejemplo de salida por pantalla
 
-## otro
+```
+Ejecutando pre-commit...
+    std::cout << _("Ingresa el texto de ejemplo, rOma: ");
+ERROR: Palabra no permitida "rOma" en el fichero: cuentapalabras.cpp
 
+```
 
+*He puesto r0ma para que no lo coja el readme como mala palabra
 
 
