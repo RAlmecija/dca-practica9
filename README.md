@@ -45,3 +45,18 @@ Biseccionando: faltan 3 revisiones por probar después de esto (aproximadamente 
 ```
 
 He ido pasando los commits con el comando `git bisect good` para ver cual era el que fallaba.
+
+
+# Git Hooks
+
+
+## pre-commit
+
+(Se encuentra explicado dentro del archivo ./git/hooks/pre-commit)
+
+
+## otro
+
+
+
+
