@@ -1,0 +1,22 @@
+
+*No usar este como ejemplo, solo es para que aparezca en github
+
+*Las palabras prohibidas se han modificado para que no salte al subir el archivo a remoto
+
+
+#!/bin/bash
+
+echo "Ejecutando pre-commit..."
+
+palabras_prohibidas="ejemplopalabra1 ejemplopalabra2"
+
+git diff --cached --name-status | while read x file; do
+        if [ "$x" == 'D' ]; then continue; fi
+        for word in $palabras_prohibidas
+        do
+            if egrep $word $file ; then
+                echo "ERROR: Palabra no permitida \"${word}\" en el fichero: ${file}"
+                exit 1
+            fi
+        done
+done || exit $?
